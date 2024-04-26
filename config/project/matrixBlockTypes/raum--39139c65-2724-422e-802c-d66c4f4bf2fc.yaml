@@ -1,0 +1,167 @@
+field: 062ef4f7-4ba2-4dd7-aa12-cfa5973f8f85 # Raum
+fieldLayouts:
+  04febae0-a8ff-4706-915f-0e292b39a414:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 01e81b92-4139-49af-be82-29f5ca11d46a # Titel
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8d83f206-06bb-4180-b801-68d6f20f1167
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: db2bc74f-b437-48a8-b455-9ad4476b0507 # Auf Startseite anzeigen
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e2fee647-d65f-4967-a250-55f0e7d4bac9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f6fc6596-18a4-4488-a419-aa599e70ed24 # Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8ec30158-38cc-4149-9569-31ec0436d8c5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1ab16df5-474f-49b9-98d2-87a8b94268d6 # Bilder
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a98e6280-eabe-4d7b-b04f-b1fd8d13a308
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f1499104-a086-4772-80d3-133eb042773d
+        userCondition: null
+fields:
+  1ab16df5-474f-49b9-98d2-87a8b94268d6: # Bilder
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: bilder
+    instructions: null
+    name: Bilder
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:1a7ce735-785d-453b-bcac-6eecba43efa4' # Media
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maxRelations: 10
+      minRelations: 1
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:1a7ce735-785d-453b-bcac-6eecba43efa4' # Media
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  01e81b92-4139-49af-be82-29f5ca11d46a: # Titel
+    columnSuffix: kdgfbnql
+    contentColumnType: text
+    fieldGroup: null
+    handle: titel
+    instructions: null
+    name: Titel
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  db2bc74f-b437-48a8-b455-9ad4476b0507: # Auf Startseite anzeigen
+    columnSuffix: lfjxlwjb
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: aufStartseiteAnzeigen
+    instructions: null
+    name: 'Auf Startseite anzeigen'
+    searchable: false
+    settings:
+      default: true
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  f6fc6596-18a4-4488-a419-aa599e70ed24: # Text
+    columnSuffix: bblukkqq
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: null
+    name: Text
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      ckeConfig: 2e5912ed-3339-41ff-bd7a-0742e68701b7 # Default
+      columnType: text
+      defaultTransform: ''
+      enableSourceEditingForNonAdmins: false
+      purifierConfig: null
+      purifyHtml: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\ckeditor\Field
+handle: raum
+name: Raum
+sortOrder: 1

@@ -1,0 +1,79 @@
+{%- block htmlPage -%}
+    {% minify %}
+    <!DOCTYPE html>
+        {% block htmlTag %}
+            <html lang="{{ craft.app.language |slice(0,2) }}">
+        {% endblock htmlTag %}
+        {% block headTag %}
+    <head>
+        {% endblock headTag %}
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="referrer" content="origin-when-cross-origin" />
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1">
+
+        {% block headContent %}
+            {% block headMeta %}
+            {% endblock headMeta %}
+
+            {% block headSeo %}
+                {% block headSeoTitle %}
+                    {% if entry.seoTitle is defined and entry.seoTitle | length %}
+                        {% set seoTitle = entry.seoTitle %}
+                    {% elseif entry.title is defined and entry.title | length %}
+                        {% set seoTitle = entry.title %}
+                    {% endif %}
+
+                    {% if seoTitle is defined %}
+                        <title>{{ seoTitle }}{{ " | " ~ standardEinstellungen.seoTitle }}</title>
+                    {% endif %}
+                {% endblock headSeoTitle %}
+                {% block headSeoDescription %}
+                    {% if entry.seoDescription is defined and entry.seoDescription | length %}
+                        <meta name="description" content="{{ entry.seoDescription }}">
+                    {% else %}
+                        <meta name="description" content="{{ standardEinstellungen.seoDescription }}">
+                    {% endif %}
+                {% endblock headSeoDescription %}
+                {% block headSeoImage %}
+                    {% if entry.seoImage is defined and entry.seoImage | length %}
+                        <meta property="og:image" content="{{ entry.seoImage.one().url }}" />
+                    {% elseif standardEinstellungen.seoImage is defined and standardEinstellungen.seoImage | length %}
+                        <meta property="og:image" content="{{ standardEinstellungen.seoImage.one().url }}" />
+                    {% endif %}
+                {% endblock headSeoImage %}
+            {% endblock headSeo %}
+
+            <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any">
+            <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+            <link href="{{ craft.vite.entry("app.css") }}" rel="stylesheet" media="all">
+
+            {% block headLinks %}
+            {% endblock headLinks %}
+
+            {% block headJs %}
+            {% endblock headJs %}
+        {% endblock headContent %}
+    </head>
+
+    <body class="has-navbar-fixed-top">
+        {% block bodyContent %}
+            {% block bodyHtml %}
+                {% include "_partials/navigation.twig" %}
+
+                {% block content %}
+                {% endblock %}
+
+                {% include "_partials/footer.twig" %}
+            {% endblock bodyHtml %}
+
+            {% block bodyJs %}
+                {{ craft.vite.script("src/js/app.ts") }}
+            {% endblock bodyJs %}
+        {% endblock bodyContent %}
+    </body>
+    </html>
+    {% endminify %}
+{%- endblock htmlPage -%}

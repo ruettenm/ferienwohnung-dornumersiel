@@ -1,0 +1,10 @@
+columnSuffix: yqrannfk
+contentColumnType: integer
+fieldGroup: 400b3ccf-4aa3-4b6a-a94a-46eb13007298 # Common
+handle: formular
+instructions: null
+name: Formular
+searchable: false
+translationKeyFormat: null
+translationMethod: none
+type: wheelform\fields\FormField

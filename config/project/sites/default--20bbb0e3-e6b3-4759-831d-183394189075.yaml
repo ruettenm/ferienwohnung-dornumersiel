@@ -1,0 +1,9 @@
+baseUrl: $PRIMARY_SITE_URL
+enabled: true
+handle: default
+hasUrls: true
+language: de
+name: 'Ferienwohnung Dornumersiel'
+primary: true
+siteGroup: 17814e24-97ed-43c5-bdb1-e118a6e11464 # Ferienwohnung Medebach
+sortOrder: 1

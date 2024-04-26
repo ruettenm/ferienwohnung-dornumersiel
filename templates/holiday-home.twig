@@ -1,0 +1,46 @@
+{% extends "_layout/base-layout.twig" %}
+
+{% block content %}
+    {% cache %}
+        <section class="section">
+            <div class="container">
+                <h1 class="title">{{ entry.title }}</h1>
+                <div class="columns is-variable is-5">
+                    <div class="column is-two-third">
+                        <div class="content">
+                            {{ entry.text }}
+                        </div>
+                    </div>
+                    {% include "_partials/sidebar.twig" %}
+                </div>
+            </div>
+        </section>
+        <section class="section has-background-grey-light">
+            <div class="container">
+                {% for raum in entry.raum.all() %}
+                    <a id="{{ raum.titel|url_encode }}"></a>
+                    <div class="box mt-5">
+                        <h2 class="is-size-3 subtitle mb-0">{{ raum.titel }}</h2>
+                        <hr class="mt-0" />
+                        <div class="columns">
+                            <div class="column is-half">
+                                <div class="content">
+                                    {{ raum.text }}
+                                </div>
+                            </div>
+                            <div class="column is-half">
+                                <div id="carousel-demo" class="carousel">
+                                    {% for bild in raum.bilder.all() %}
+                                        <figure class='image is-4by3'>
+                                            <img src="{{ bild.getUrl('img_700_525') |raw }}" alt="{{ raum.titel }} {{ loop.index }}" />
+                                        </figure>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </section>
+    {% endcache %}
+{% endblock %}

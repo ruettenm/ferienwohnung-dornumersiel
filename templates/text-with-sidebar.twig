@@ -1,0 +1,19 @@
+{% extends "_layout/base-layout.twig" %}
+
+{% block content %}
+    {% cache %}
+        <section class="section">
+            <div class="container">
+                <h1 class="title">{{ entry.title }}</h1>
+                <div class='columns'>
+                    <div class="column is-two-third">
+                        <div class="content">
+                            {{ entry.text }}
+                        </div>
+                    </div>
+                    {% include "_partials/sidebar.twig" %}
+                </div>
+            </div>
+        </section>
+    {% endcache %}
+{% endblock %}

@@ -1,0 +1,28 @@
+.carousel {
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0px 0 1px rgb(10 10 10 / 2%);
+
+  .slider {
+    overflow: hidden;
+    border-radius: 6px;
+
+    .slider-navigation-next {
+      right: 0.5rem;
+    }
+
+    .slider-navigation-previous {
+      left: 0.5rem;
+    }
+  }
+}
+
+.navbar-item.is-active {
+  font-weight: bold;
+}
+
+body {
+  font-size: 1.1rem;
+}
+
+.content figure.homepage-mobile-image {
+  margin: 0 0 1em 0;
+}

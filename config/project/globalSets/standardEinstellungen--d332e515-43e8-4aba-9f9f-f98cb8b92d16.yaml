@@ -1,0 +1,48 @@
+fieldLayouts:
+  9b47c317-8b3d-4b18-8512-243c13d61454:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: b6be27b3-4c23-49b5-9470-063c6ab335c1 # SEO Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ff8ac34a-35e2-4c7c-95c5-850e3adabe9f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 41bc09b4-af7d-4d29-81ab-c7742108019c # SEO Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8364743a-f46d-45fe-991a-f53b0302a361
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0fa86276-6ad6-4083-b0e9-f6a9c2c4751d # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 94082c5f-7ce0-4936-b57b-ac828f42a4cd
+            userCondition: null
+            warning: null
+            width: 100
+        name: Suchmaschinenoptimierung
+        uid: d2956071-9fe9-4fb3-adec-27add0449dc0
+        userCondition: null
+handle: standardEinstellungen
+name: 'Standard Einstellungen'
+sortOrder: 1

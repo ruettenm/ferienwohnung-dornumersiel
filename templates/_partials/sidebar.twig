@@ -1,0 +1,29 @@
+{% cache %}
+    <div class="column is-one-third">
+        <div class="card">
+            <div class='card-header'>
+                <div class='card-header-title is-centered'>{{ entry.sidebarTitle }}</div>
+            </div>
+            {% if entry.sidebarImage is defined and entry.sidebarImage | length %}
+                {% set image = entry.sidebarImage.one() %}
+                <div class="card-image">
+                    <figure class='image is-4by3'>
+                        <img src="{{ entry.sidebarImage.one().getUrl('img_700_525') |raw }}" alt="XX" />
+                    </figure>
+                </div>
+            {% endif %}
+            {% if entry.sidebarText is defined and entry.sidebarText | length %}
+                <div class="card-content">
+                    <div class="content">
+                        {{ entry.sidebarText }}
+                        {% if entry.sidebarCtaLink is defined and entry.sidebarCtaLink | length %}
+                            <a class="button is-primary is-fullwidth" href="{{ entry.sidebarCtaLink }}">
+                                <span>{{ entry.sidebarCtaText }}</span>
+                            </a>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+{% endcache %}

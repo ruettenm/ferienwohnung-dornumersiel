@@ -1,0 +1,91 @@
+{% extends "_layout/base-layout.twig" %}
+
+{% block content %}
+    <section class="section">
+        <div class="container">
+            <h1 class="title">{{ entry.title }}</h1>
+            <div class='columns'>
+                <div class="column is-two-third">
+                    <div class="content">
+                        {{ entry.text }}
+                    </div>
+
+                    {% if craft.app.session.hasFlash('wheelformSuccess') %}
+                        <article class="message is-success">
+                            <div class="message-header">
+                                <p>Danke!</p>
+                            </div>
+                            <div class="message-body">
+                                {{ craft.app.session.getFlash('wheelformSuccess') }}
+                            </div>
+                        </article>
+                    {% endif %}
+
+                    {% set form = wheelform.form({
+                        id: entry.formular.id,
+                    }) %}
+
+                    {% macro errorList(errors) %}
+                        {% if errors %}
+                            {% if errors|length > 1 %}
+                                <ul class="errors">
+                                    {% for error in errors %}
+                                        <li>{{ error }}</li>
+                                    {% endfor %}
+                                </ul>
+                            {% else %}
+                                {{ error[0] }}
+                            {% endif %}
+                        {% endif %}
+                    {% endmacro %}
+                    {% from _self import errorList %}
+
+                    {{ form.open() }}
+
+                    {{ wheelformErrors['form'] is defined ? errorList(wheelformErrors['form']) }}
+                    {% for field in form.fields %}
+                        {% switch field.type %}
+                            {% case "textarea" %}
+                                <div class="field">
+                                    <label class="label" for="{{field.name}}">{{field.label}}{% if not field.required %}<small> (optional)</small>{% endif %}</label>
+                                    <div class="control">
+                                        <textarea class="textarea" name="{{field.name}}" id="{{field.name}}" placeholder="{{field.placeholder}}"{% if field.required %} required{% endif %}>{{ values[field.name] ?? '' }}</textarea>
+                                    </div>
+                                    {% if wheelformErrors[field.name] is defined %}
+                                        <p class="help is-danger">{{ errorList(wheelformErrors[field.name]) }}</p>
+                                    {% endif %}
+                                </div>
+
+                            {% default %}
+                                <div class="field">
+                                    <label class="label" for="{{field.name}}">{{field.label}}{% if not field.required %}<small> (optional)</small>{% endif %}</label>
+                                    <div class="control">
+                                        <input class="input" id="{{field.name}}" name="{{field.name}}" type="{{field.type}}" placeholder="{{field.placeholder}}" value="{{ values[field.name] ?? '' }}"{% if field.required %} required{% endif %}>
+                                    </div>
+                                    {% if wheelformErrors[field.name] is defined %}
+                                        <p class="help is-danger">{{ errorList(wheelformErrors[field.name]) }}</p>
+                                    {% endif %}
+                                </div>
+                        {% endswitch %}
+                    {% endfor %}
+
+                    <div class="field">
+                        <div class="control">
+                            <label class="checkbox" for="privacy">
+                                <input type="checkbox" name="privacy" id="privacy" required>
+                                Ich habe die <a href="/datenschutzerklaerung">Datenschutzerklärung</a> gelesen und bin mit der Verarbeitung meiner Daten einverstanden.
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="field is-grouped">
+                        <div class="control">
+                            <button type="submit" class="button is-primary">Absenden</button>
+                        </div>
+                    </div>
+                </div>
+                {% include "_partials/sidebar.twig" %}
+            </div>
+        </div>
+    </section>
+{% endblock %}

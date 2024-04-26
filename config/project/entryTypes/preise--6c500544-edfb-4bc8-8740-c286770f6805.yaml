@@ -1,0 +1,121 @@
+fieldLayouts:
+  46935135-19dc-4529-adec-4ef8f5b999dc:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 4befb613-9973-423b-9b86-af4f069070a9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0fa86276-6ad6-4083-b0e9-f6a9c2c4751d # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 80ffe064-2ae9-4021-9b04-923288625c09
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: d2b89316-cceb-4ee8-9976-914a9f52c457
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: a587df84-23e3-4faf-b47e-1490a9a55dca # Sidebar Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 877bb18d-4786-41ae-abd6-a00bc9a12a07
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 07c5e7de-ba87-4ed6-9d15-4d61714b1d76 # Sidebar Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e86849d2-0fb9-4231-8c39-b74742f2dfa3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 52bbbd7a-9ceb-4fb0-9898-40cc8ca5a45c # Sidebar Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d8b8f777-21e6-4f3d-91db-fe8baec2eb46
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 17c404e7-0910-40a3-8990-26628b3c1acc # Sidebar CTA Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b5b31efb-2fe4-4e05-bed2-4d4b436aaec0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 265fad82-da6e-4f80-9612-b9e9b43edf10 # Sidebar CTA Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0302ff64-22d0-47a4-80eb-e77c99a95d17
+            userCondition: null
+            warning: null
+            width: 100
+        name: Seitenleiste
+        uid: 51c4fba1-e696-4db5-ba49-396b98ad0aa3
+        userCondition: null
+handle: preise
+hasTitleField: true
+name: Preise
+section: a2d1b6f8-9b0c-46b8-96bc-56c33e79a7a3 # Preise
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

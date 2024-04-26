@@ -1,22 +1,118 @@
-dateModified: 1713654072
+dateModified: 1714165694
 email:
-  fromEmail: matthias.ruetten@gmail.com
+  fromEmail: info@nordseewohnung.net
   fromName: 'Ferienwohnung Dornumersiel'
+  replyToEmail: null
+  template: null
+  transportSettings:
+    command: '/usr/sbin/sendmail -t -i'
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  media:
+    hasUrls: true
+    name: Media
+    settings:
+      path: media
+    type: craft\fs\Local
+    url: /media
 meta:
   __names__:
-    80d9c334-541d-4f23-869e-f49e4bc265ee: 'Ferienwohnung Dornumersiel' # Ferienwohnung Dornumersiel
-    b338c6ca-cbf6-49e0-8b19-fcfa608a00ba: 'Ferienwohnung Dornumersiel' # Ferienwohnung Dornumersiel
+    0a893a0b-fc2b-4f51-856b-e626d7b0b209: Bild # Bild
+    0fa86276-6ad6-4083-b0e9-f6a9c2c4751d: Text # Text
+    1a7ce735-785d-453b-bcac-6eecba43efa4: Media # Media
+    1ab16df5-474f-49b9-98d2-87a8b94268d6: Bilder # Bilder
+    1cdd9efc-870d-4cfe-8586-8aac1b40f33b: Text # Text
+    01e81b92-4139-49af-be82-29f5ca11d46a: Titel # Titel
+    2a240683-d39a-4f4f-8aed-8f342b24bdb4: 'Unsere Ferienwohnung' # Unsere Ferienwohnung
+    2be7f679-ae80-4fd3-9d9f-79b334e2b83a: Formular # Formular
+    2e5912ed-3339-41ff-bd7a-0742e68701b7: Default # Default
+    2ea16f7b-5178-4ab5-8f56-54b2a54f2726: 700_4zu3 # 700_4zu3
+    5bcc230e-4259-484d-8a34-fc38910d9fc0: Titel # Titel
+    5d53410b-5299-41c1-98bd-66e4b55f25fd: Startseite # Startseite
+    6c500544-edfb-4bc8-8740-c286770f6805: Preise # Preise
+    07c5e7de-ba87-4ed6-9d15-4d61714b1d76: 'Sidebar Image' # Sidebar Image
+    8a6269dc-0b29-4be3-a346-97c12dbf0ae3: 'SEO Image' # SEO Image
+    8dbef653-68b6-42ad-ba6b-dd5054b235cd: Bild # Bild
+    9eb4b2c8-5d64-487e-8ebe-64ebc5c2da14: 'Public Schema' # Public Schema
+    17c404e7-0910-40a3-8990-26628b3c1acc: 'Sidebar CTA Text' # Sidebar CTA Text
+    20bbb0e3-e6b3-4759-831d-183394189075: 'Ferienwohnung Dornumersiel' # Ferienwohnung Dornumersiel
+    41bc09b4-af7d-4d29-81ab-c7742108019c: 'SEO Description' # SEO Description
+    52bbbd7a-9ceb-4fb0-9898-40cc8ca5a45c: 'Sidebar Text' # Sidebar Text
+    062ef4f7-4ba2-4dd7-aa12-cfa5973f8f85: Raum # Raum
+    66e93977-5897-4638-b000-041aa1e425e8: 'Unsere Ferienwohnung' # Unsere Ferienwohnung
+    076b1e04-5900-442c-bc35-0ead523b36c6: Überschrift # Überschrift
+    78dd1b93-d97c-4b4a-865d-5405014a85b9: Datenschutzerklärung # Datenschutzerklärung
+    265fad82-da6e-4f80-9612-b9e9b43edf10: 'Sidebar CTA Link' # Sidebar CTA Link
+    400b3ccf-4aa3-4b6a-a94a-46eb13007298: Common # Common
+    430c1a18-b248-4f53-b611-fb1563f067ff: Kontakt # Kontakt
+    568f227c-b0c8-48f3-b586-e904f2e76640: Impressum # Impressum
+    799d2871-fd2e-4b87-bfef-ba45acad0f4b: Carousel # Carousel
+    17814e24-97ed-43c5-bdb1-e118a6e11464: 'Ferienwohnung Medebach' # Ferienwohnung Medebach
+    39139c65-2724-422e-802c-d66c4f4bf2fc: Raum # Raum
+    480730e7-53a9-4954-97e0-5917bf11d3a5: Datenschutzerklärung # Datenschutzerklärung
+    6917746d-2be0-400f-a76f-03490e8e5bb0: Überschrift # Überschrift
+    a2d1b6f8-9b0c-46b8-96bc-56c33e79a7a3: Preise # Preise
+    a7eec3a3-d855-40c6-abd4-f1fb51e952f0: Hintergrund # Hintergrund
+    a97c60f2-8f5d-462c-b196-0660bb1ef185: Überschrift # Überschrift
+    a587df84-23e3-4faf-b47e-1490a9a55dca: 'Sidebar Title' # Sidebar Title
+    ab95f1e6-0c3d-43b0-a45d-f7c557ba00fb: Impressum # Impressum
+    b6be27b3-4c23-49b5-9470-063c6ab335c1: 'SEO Title' # SEO Title
+    b18c480c-787f-46ba-abc9-bcc040eaaaa3: Text # Text
+    b67d0e62-2273-44d2-a049-b86d4b726272: Text # Text
+    b3822de3-a6c4-42c8-ae2a-050e9922e8e5: Kontakt # Kontakt
+    bfaaf244-45ff-46bb-9008-0257c0c4c4e5: Simple # Simple
+    c1895366-1f8c-457a-9b3f-2ecf0577a35d: Buchung # Buchung
+    d332e515-43e8-4aba-9f9f-f98cb8b92d16: 'Standard Einstellungen' # Standard Einstellungen
+    dae3bb7e-51bc-40bf-bd59-7db83b68a726: Liste # Liste
+    db2bc74f-b437-48a8-b455-9ad4476b0507: 'Auf Startseite anzeigen' # Auf Startseite anzeigen
+    dd95da57-e0ed-4bcf-9096-380d716c357b: Buchung # Buchung
+    e20482da-a2f3-45cb-8af5-10a1ae665c5d: Startseite # Startseite
+    e379341f-e7af-4884-bd1f-dfcfeb8cca06: 'Full HD' # Full HD
+    ee1ac725-a9d1-4be8-b513-39b4b999db0a: Bild # Bild
+    f6fc6596-18a4-4488-a419-aa599e70ed24: Text # Text
+    f170d4cf-0d2c-494b-ad30-9f48c42e4e3a: Bild # Bild
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  minify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  redirect:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.5
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  wheelform:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+    settings:
+      cp_label: Forms
+      disabled_fields: ''
+      from_email: info@nordseewohnung.net
+      from_name: 'Ferienwohnung Dornumersiel'
+      recaptcha_min_score: '0.5'
+      recaptcha_public: ''
+      recaptcha_secret: ''
+      recaptcha_version: '2'
+      success_message: 'Danke! Wir werden deine Nachricht in Kürze bearbeiten.'
+      volume_id: ''
 system:
   edition: solo
   live: true
   name: 'Ferienwohnung Dornumersiel'
-  schemaVersion: 5.0.0.20
-  timeZone: America/Los_Angeles
+  retryDuration: null
+  schemaVersion: 4.5.3.0
+  timeZone: Europe/Berlin
 users:
   allowPublicRegistration: false
   defaultGroup: null
   photoSubpath: null
   photoVolumeUid: null
-  require2fa: false
   requireEmailVerification: true

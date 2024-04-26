@@ -1,0 +1,38 @@
+{% extends "_layout/base-layout.twig" %}
+
+{% block content %}
+    <section class="section">
+        <div class="container">
+            <h1 class="title">{{ entry.title }}</h1>
+            <div class='columns'>
+                <div class="column is-two-third">
+                    <div class="content">
+                        {{ entry.text }}
+                    </div>
+                </div>
+                {% include "_partials/sidebar.twig" %}
+            </div>
+            <div class='columns is-multiline'>
+            {% set unsereFerienwohnung = craft.entries().section('unsereFerienwohnung').one() %}
+            {% for raum in unsereFerienwohnung.raum.all() %}
+                {% if raum.aufStartseiteAnzeigen %}
+                    <div class='column is-half-tablet is-one-third-desktop'>
+                        <a href="{{ unsereFerienwohnung.url }}#{{ raum.titel|url_encode }}">
+                            <div class='card'>
+                                <div class='card-header'>
+                                    <div class='card-header-title is-centered'>{{ raum.titel }}</div>
+                                </div>
+                                <div class='card-image'>
+                                    <figure class='image is-4by3'>
+                                        <img src="{{ raum.bilder.one().getUrl('img_700_525') |raw }}" alt="{{ raum.titel }}" />
+                                    </figure>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                {% endif %}
+            {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endblock %}

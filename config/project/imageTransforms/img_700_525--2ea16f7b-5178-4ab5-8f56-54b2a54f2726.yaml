@@ -1,0 +1,10 @@
+format: jpg
+handle: img_700_525
+height: 525
+interlace: none
+mode: crop
+name: 700_4zu3
+position: center-center
+quality: 82
+upscale: true
+width: 700

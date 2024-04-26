@@ -1,0 +1,21 @@
+columnSuffix: lkzncktb
+contentColumnType: text
+fieldGroup: 400b3ccf-4aa3-4b6a-a94a-46eb13007298 # Common
+handle: text
+instructions: null
+name: Text
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  ckeConfig: 2e5912ed-3339-41ff-bd7a-0742e68701b7 # Default
+  columnType: text
+  defaultTransform: ''
+  enableSourceEditingForNonAdmins: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

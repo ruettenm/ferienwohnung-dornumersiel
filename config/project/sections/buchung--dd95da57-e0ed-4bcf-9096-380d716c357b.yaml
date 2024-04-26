@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: buchung
+name: Buchung
+propagationMethod: all
+siteSettings:
+  20bbb0e3-e6b3-4759-831d-183394189075: # Ferienwohnung Dornumersiel
+    enabledByDefault: true
+    hasUrls: true
+    template: forms/form.twig
+    uriFormat: buchung
+type: single

@@ -1,0 +1,49 @@
+{% cache %}
+    <nav class="navbar is-light is-fixed-top" role="navigation" aria-label="Navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item is-hidden-desktop" href="/">
+                    <strong>Ferienwohnung Rütten</strong>
+                </a>
+
+                <a role="button" id="navbar-burger" class="navbar-burger" aria-label="Menü" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbar" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item{% if craft.app.request.segments|first == '' %} is-active{% endif %}" href="{{ url("/") }}">
+                        Startseite
+                    </a>
+
+                    <a class="navbar-item{% if craft.app.request.segments|first == 'unsere-ferienwohnung' %} is-active{% endif %}" href="{{ url("/unsere-ferienwohnung") }}">
+                        Unsere Ferienwohnung
+                    </a>
+
+                    <a class="navbar-item{% if craft.app.request.segments|first == 'preise' %} is-active{% endif %}" href="{{ url("/preise") }}">
+                        Preise
+                    </a>
+
+                    <a class="navbar-item{% if craft.app.request.segments|first == 'buchung' %} is-active{% endif %}" href="{{ url("/buchung") }}">
+                        Buchung
+                    </a>
+
+                    <a class="navbar-item{% if craft.app.request.segments|first == 'kontakt' %} is-active{% endif %}" href="{{ url("/kontakt") }}">
+                        Kontakt
+                    </a>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <a class="button is-primary" href="{{ url("/buchung") }}">
+                            <span>Buchungsanfrage senden</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+{% endcache %}

@@ -1,0 +1,139 @@
+fieldLayouts:
+  48ff1c62-eb09-499d-b9b2-1f00b8cf63c6:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 5ad927a6-8c33-4b13-a968-804dc842f785
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0fa86276-6ad6-4083-b0e9-f6a9c2c4751d # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6aee643d-b2f8-497b-a15e-d14e84ca2139
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: b93306a0-1455-4060-aaaa-69760260cc78
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 062ef4f7-4ba2-4dd7-aa12-cfa5973f8f85 # Raum
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 37447d0e-22a5-4bdd-8b54-5de58c26e0e0
+            userCondition: null
+            warning: null
+            width: 100
+        name: Räume
+        uid: 87490b29-494f-49c7-8797-6a41896be9ca
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: a587df84-23e3-4faf-b47e-1490a9a55dca # Sidebar Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1ac0cabb-98ad-40e8-b961-4b82dc50c36d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 07c5e7de-ba87-4ed6-9d15-4d61714b1d76 # Sidebar Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c6688658-3e91-4c40-b0d2-da534a18b751
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 52bbbd7a-9ceb-4fb0-9898-40cc8ca5a45c # Sidebar Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 76b7e485-ae87-40fe-b59c-153b2569034a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 17c404e7-0910-40a3-8990-26628b3c1acc # Sidebar CTA Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fa6ca7fa-bae1-4b2d-b8bb-ccbc1297035d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 265fad82-da6e-4f80-9612-b9e9b43edf10 # Sidebar CTA Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c66d9521-a37c-444a-a954-13a2fce83ee1
+            userCondition: null
+            warning: null
+            width: 100
+        name: Seitenleiste
+        uid: a6e4e68c-aded-48dc-ba69-fd74c7b4512d
+        userCondition: null
+handle: unsereFerienwohnung
+hasTitleField: true
+name: 'Unsere Ferienwohnung'
+section: 2a240683-d39a-4f4f-8aed-8f342b24bdb4 # Unsere Ferienwohnung
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

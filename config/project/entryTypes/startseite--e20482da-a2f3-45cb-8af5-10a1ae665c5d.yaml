@@ -1,0 +1,163 @@
+fieldLayouts:
+  5e99b942-034e-43bc-ac37-197598d789cd:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: bb41ae0a-76ef-48b7-8877-9ff93737a5fc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0fa86276-6ad6-4083-b0e9-f6a9c2c4751d # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fc6e1637-0aff-42ee-a001-f124f38f2c70
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: cee53f35-cfdb-4c5a-8c42-799f2bde27ea
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: b6be27b3-4c23-49b5-9470-063c6ab335c1 # SEO Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 53379b04-6b4e-4e4f-8585-1285bd475851
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 41bc09b4-af7d-4d29-81ab-c7742108019c # SEO Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 52b87a5b-d6ff-47eb-856b-58d88b6df5a8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8a6269dc-0b29-4be3-a346-97c12dbf0ae3 # SEO Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dfcca3d0-d072-4285-ba96-3db6f778e646
+            userCondition: null
+            warning: null
+            width: 100
+        name: Suchmaschinenoptimierung
+        uid: 2c4d09ab-5f65-4005-9ae5-f8bb5e93e340
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: a587df84-23e3-4faf-b47e-1490a9a55dca # Sidebar Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 507e8473-9a3d-4f16-af51-9f6739c67447
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 07c5e7de-ba87-4ed6-9d15-4d61714b1d76 # Sidebar Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8c99232d-e2f5-404d-91f5-8dbfb1bce1e2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 52bbbd7a-9ceb-4fb0-9898-40cc8ca5a45c # Sidebar Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d3c5c94c-7feb-45d7-8c03-d9510f677ceb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 17c404e7-0910-40a3-8990-26628b3c1acc # Sidebar CTA Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8810af3a-6a79-4963-a32f-bf4e83f12ca6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 265fad82-da6e-4f80-9612-b9e9b43edf10 # Sidebar CTA Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 224445a7-b4f2-4bf0-aeba-8a8385052b4e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Seitenleiste
+        uid: 11fee280-cee1-415d-8f2d-083987305c75
+        userCondition: null
+handle: startseite
+hasTitleField: true
+name: Startseite
+section: 5d53410b-5299-41c1-98bd-66e4b55f25fd # Startseite
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,10 @@
+format: null
+handle: fullHd
+height: 1080
+interlace: none
+mode: fit
+name: 'Full HD'
+position: center-center
+quality: 82
+upscale: true
+width: 1920

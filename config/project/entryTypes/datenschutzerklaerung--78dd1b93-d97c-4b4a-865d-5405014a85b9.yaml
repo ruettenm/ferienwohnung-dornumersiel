@@ -1,0 +1,97 @@
+fieldLayouts:
+  8fdcda22-9093-4bb6-90f3-e47d7e3f69d3:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c9cca090-b8dc-4694-b623-ca8c41bf2c3b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0fa86276-6ad6-4083-b0e9-f6a9c2c4751d # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1a02afce-5f85-47ee-a914-0c333a99e277
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: c3a428a4-49f0-43a8-a4cc-4acc11d2873d
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: b6be27b3-4c23-49b5-9470-063c6ab335c1 # SEO Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 55d02294-109c-4dc5-874c-eadbd223ad6d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 41bc09b4-af7d-4d29-81ab-c7742108019c # SEO Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8b62da31-d254-4765-8785-51e9204aa1cb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8a6269dc-0b29-4be3-a346-97c12dbf0ae3 # SEO Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ca1d8623-6ca8-45e3-8411-efaa794ff512
+            userCondition: null
+            warning: null
+            width: 100
+        name: Suchmaschinenoptimierung
+        uid: 91862851-2516-45bb-83cc-4389e1230296
+        userCondition: null
+handle: datenschutzerklaerung
+hasTitleField: true
+name: Datenschutzerklärung
+section: 480730e7-53a9-4954-97e0-5917bf11d3a5 # Datenschutzerklärung
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,8 +1,0 @@
-baseUrl: $PRIMARY_SITE_URL
-handle: default
-hasUrls: true
-language: de-DE
-name: 'Ferienwohnung Dornumersiel'
-primary: true
-siteGroup: b338c6ca-cbf6-49e0-8b19-fcfa608a00ba # Ferienwohnung Dornumersiel
-sortOrder: 1

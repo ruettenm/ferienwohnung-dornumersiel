@@ -16,12 +16,10 @@ return GeneralConfig::create()
     ->defaultWeekStartDay(1)
     // Prevent generated URLs from including "index.php"
     ->omitScriptNameInUrls()
-    // Preload Single entries as Twig variables
-    ->preloadSingles()
-    // Prevent user enumeration attacks
-    ->preventUserEnumeration()
-    // Set the @webroot alias so the clear-caches command knows where to find CP resources
-    ->aliases([
-        '@webroot' => dirname(__DIR__) . '/web',
-    ])
+    // Enable Dev Mode (see https://craftcms.com/guides/what-dev-mode-does)
+    ->devMode(App::env('DEV_MODE') ?? false)
+    // Allow administrative changes
+    ->allowAdminChanges(App::env('ALLOW_ADMIN_CHANGES') ?? false)
+    // Disallow robots
+    ->disallowRobots(App::env('DISALLOW_ROBOTS') ?? false)
 ;

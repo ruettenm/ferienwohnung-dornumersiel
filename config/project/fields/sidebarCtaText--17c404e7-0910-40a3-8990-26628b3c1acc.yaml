@@ -1,0 +1,19 @@
+columnSuffix: doroaxwt
+contentColumnType: text
+fieldGroup: 400b3ccf-4aa3-4b6a-a94a-46eb13007298 # Common
+handle: sidebarCtaText
+instructions: null
+name: 'Sidebar CTA Text'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

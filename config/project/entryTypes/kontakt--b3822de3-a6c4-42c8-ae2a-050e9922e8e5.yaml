@@ -1,0 +1,109 @@
+fieldLayouts:
+  7e71a9c7-5201-4466-a3cc-d23884b6037e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 32bdbe93-eb2e-4704-bca0-c9f4701f3f65
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0fa86276-6ad6-4083-b0e9-f6a9c2c4751d # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 236eec9d-419e-4fb9-b1c2-d423bb0d5cc9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2be7f679-ae80-4fd3-9d9f-79b334e2b83a # Formular
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3771d461-6209-4497-89e1-38662111e3d8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 22d54349-4bff-465e-81d2-0e628a4b2e57
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: a587df84-23e3-4faf-b47e-1490a9a55dca # Sidebar Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 111bcbf7-5bdb-4733-9988-2f1dd0b32bbc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 07c5e7de-ba87-4ed6-9d15-4d61714b1d76 # Sidebar Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f5208e65-40a7-473f-a362-bf7e90830f51
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 52bbbd7a-9ceb-4fb0-9898-40cc8ca5a45c # Sidebar Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7fee509b-7692-4561-9914-aa8bd1a4650a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Seitenleiste
+        uid: 55223f35-f496-472f-8115-afa26dd7a81e
+        userCondition: null
+handle: kontakt
+hasTitleField: true
+name: Kontakt
+section: 430c1a18-b248-4f53-b611-fb1563f067ff # Kontakt
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
